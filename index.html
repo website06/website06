@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <title>I LOVE YOU</title>
+    <head>
+        <style>
+        .ti{
+         font-size: 30px;
+         font-family: 'Times New Roman', Times, serif;
+         color: aquamarine;
+         text-shadow: 0 5px 15px green;
+        }
+        .tab{
+            margin: auto;
+            color: aquamarine;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            height:350px;
+            width:650px;
+        }
+        .tie{
+         margin:auto;
+         display: flex;
+         text-align: center;
+         align-items: center;
+         background-color: black;
+         font-family: 'Times New Roman', Times, serif;
+         font-size: 115px;
+         font-style: bold;
+         text-shadow: 0 5px 25px green;
+         color: aqua;
+         border: 10px;
+         border-style: double;
+         border-radius: 20px;
+         border-color: blue;
+         height:100%;
+         width:100%;
+         animation: anim 5s ease-in-out infinite;
+        }
+        @keyframes anim {
+         0%{
+            filter: hue-rotate(0deg);
+         }  
+         100%{
+            filter: hue-rotate(360deg);
+         }    
+        }
+        </style>
+    </head>
+    <body bgcolor="black">
+
+   <p class="tie" id="love"></p>
+   
+
+<script type='text/javascript'>
+var a=prompt('please enter your name to see magic');
+b='I LOVE YOU '
+d=a.toUpperCase();
+c=b+d
+document.getElementById('love').innerHTML=c;
+    </script>
+    </html>
